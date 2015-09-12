@@ -32,7 +32,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             <?php 
             //该方法修改过
             
-            $this->tags(' ', true, '','tag'); ?>
+            $this->tags(' ', true, ''); ?>
         </article>
     <?php endwhile; ?>
 

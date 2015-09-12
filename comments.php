@@ -28,7 +28,7 @@ echo $commentClass;
             <?php $comments->content(); ?>
             <div class="comment-meta">
                 <span class="comment-author"><?php $comments->author(); ?></span>
-                <time class="comment-time"><?php $comments->date('H:i \\\\ j M Y'); ?></time>
+                <time class="comment-time"><?php $comments->date('H:i / j M Y'); ?></time>
                 <span class="comment-reply"><?php $comments->reply(); ?></span>
             </div>
         </div>
@@ -48,7 +48,7 @@ echo $commentClass;
     <h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有 1 条评论'), _t('已有 %d 条评论')); ?></h3>
 
     <?php $comments->listComments(); ?>
-
+    
     <?php $comments->pageNav('&laquo;', '&raquo;'); ?>
 
     <?php endif; ?>

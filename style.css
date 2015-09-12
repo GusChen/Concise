@@ -18,7 +18,7 @@ body{
 }
 a{
 	text-decoration: none;
-	color: #168DC5;
+	color: #35AAE2;
 }
 a:hover{
 	color:#35AAE2;
@@ -332,6 +332,7 @@ nav section{
     display: inline-block;
     float: none;
     margin: 5px;
+    border: 1px solid #ebebeb;
 }
 
 .page-navigator a {
@@ -339,11 +340,15 @@ nav section{
     display: block;
     width: 24px;
     height: 24px;
+    line-height: 24px;
+}
+.page-navigator a:hover {
+    background-color: #35AAE2;
+    color:#fff;
 }
 
 .page-navigator .current {
-    border-radius: 50%;
-    background: #999;
+    background: #35AAE2;
 }
 
 .current a {

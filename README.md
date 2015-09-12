@@ -1,3 +1,3 @@
 # Concise
 a theme for typecho
-一个typecho主题，基本制作完成
+一个typecho主题，制作中

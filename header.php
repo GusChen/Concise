@@ -31,13 +31,13 @@
 	<nav>
         <section>
             <ul class="menu">
-                <li class="active"><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
+                <li <?php addActionClass($this);?>><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
 
                 <?php 
                 //分类列表，判断结构为if{if...}else{if...}
                 $this->widget('Widget_Metas_Category_List')->to($category); ?>
                 <?php while ($category->next()): ?>
-                    <li><a <?php if ($this->is('post')): ?><?php if($this->category == $category->slug): ?> class="current"<?php endif; ?><?php else: ?><?php if ($this->is('category', $category->slug)): ?> class="current"<?php endif; ?><?php endif; ?> href="<?php $category->permalink(); ?>" >
+                    <li <?php addActionClass($this,'category',$category->slug);?>><a href="<?php $category->permalink(); ?>" >
                         <?php $category->name(); ?>
                     </a></li>
                 <?php endwhile; ?>
@@ -46,8 +46,9 @@
                 //独立页面
                 $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                 <?php while($pages->next()): ?>
-                    <li><a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>">
+                    <li <?php addActionClass($this,'page',$pages->slug);?>><a href="<?php $pages->permalink(); ?>">
                         <?php $pages->title(); ?>
+                        <?php //var_dump($pages);?>
                     </a></li>
                 <?php endwhile; ?>
                 <!--搜索-->

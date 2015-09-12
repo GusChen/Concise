@@ -33,7 +33,11 @@
     <div class="widget">
         <h4 class="title"><?php _e('友联'); ?></h4>
         <div class="content">
-            
+            <p><a href="http://www.51yimu.cn" rel="friend" target="_blank">随缘小栈</a></p>
+            <p><a href="http://www.liuleiweb.com" rel="friend" target="_blank">E空间</a></p>
+            <p><a href="http://www.qiushurong.cn" rel="friend" target="_blank">小树技术博客</a></p>
+            <p><a href="http://www.thisck.com/" rel="friend" target="_blank">ck博客</a></p>
+            <p><a href="http://www.liusapp.com/" rel="friend" target="_blank">流光博客</a></p>
         </div>
     </div>
 

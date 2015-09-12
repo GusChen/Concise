@@ -3,16 +3,19 @@
     <div class="widget">
         <h4 class="title"><?php _e('最新文章'); ?></h4>
         <div class="content">
-            	<?php $this->widget('Widget_Contents_Post_Recent')->parse('<p><a href="{permalink}">{title}</a></p>'); ?>
+            	<?php 
+                //参数 'pageSize=5' 表示调用5条
+                $this->widget('Widget_Contents_Post_Recent','pageSize=5')->parse('<p><a href="{permalink}">{title}</a></p>'); ?>
         </div>
     </div>
 
     <div class="widget">
         <h4 class="title"><?php _e('最近回复'); ?></h4>
         <div class="content">
-            	<?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
+            	<?php $this->widget('Widget_Comments_Recent','pageSize=5')->to($comments); ?>
 		        <?php while($comments->next()): ?>
-		            <p><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?></p>
+
+		            <p><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(20, '...'); ?></p>
 		        <?php endwhile; ?>
         </div>
     </div>

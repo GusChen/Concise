@@ -10,7 +10,7 @@
                 </h2>
             </div>
             <div class="post-meta">
-                <span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('j M Y'); ?></time>  路  <?php $this->title() ?></span>
+                <span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('j M Y'); ?></time> · <?php $this->title() ?></span>
             </div>
                 <div class="post-content" itemprop="articleBody">
                     <?php $this->content('Read more »'); ?>

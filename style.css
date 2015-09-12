@@ -230,7 +230,7 @@ nav section{
 	margin: 0 0 10px 10px;
 }
 
-.tag{
+.post-tag a,.tag{
 	border: 1px solid #ebebeb;
     padding: 2px 7px;
     color: #959595;
@@ -242,7 +242,7 @@ nav section{
     transition: all 0.2s ease;
 }
 
-.tag:hover{
+.post-tag a:hover,.tag:hover{
 	color: #ffffff;
     background: #35AAE2;
     border: 1px solid #35AAE2;

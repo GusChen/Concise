@@ -18,7 +18,9 @@
                     <?php $this->content('Read more »'); ?>
                 </div>
             <?php //endif; ?>
-            <?php $this->tags(' ', true, ''); ?>
+            <div class="post-tag">
+                <?php $this->tags(' ', true, ''); ?>
+            </div>
         </article>
     <?php endwhile; ?>
     <?php else: ?>

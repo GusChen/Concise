@@ -29,10 +29,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                     <?php $this->content('Read more »'); ?>
                 </div>
             <?php //endif; ?>
-            <?php 
-            //该方法修改过
-            
-            $this->tags(' ', true, ''); ?>
+            <div class="post-tag">
+                <?php $this->tags(' ', true, ''); ?>
+            </div>
         </article>
     <?php endwhile; ?>
 

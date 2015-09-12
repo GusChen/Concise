@@ -6,15 +6,13 @@
         <article class="post">
             <div class="post-head">
                 <h2 class="post-title" itemprop="name headline">
-                    <a itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+                    <a itemtype="url" href="javascript:void(0);"><?php $this->title() ?></a>
                 </h2>
             </div>
-            <div class="post-meta">
-                <span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('j M Y'); ?></time> · <?php $this->title() ?></span>
-            </div>
                 <div class="post-content" itemprop="articleBody">
-                    <?php $this->content('Read more »'); ?>
+                    <?php $this->content(); ?>
                 </div>
+                <?php $this->need('comments.php'); ?>
         </article>
 </section>
 

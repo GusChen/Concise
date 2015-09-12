@@ -77,6 +77,10 @@ echo $commentClass;
         </form>
     </div>
     <?php else: ?>
-    <h3><?php _e('评论已关闭'); ?></h3>
+        <?php 
+        //独立页面的隐藏评论不显示
+        if (!$this->is('page')): ?>
+            <h3><?php _e('评论已关闭'); ?></h3>
+        <?php endif?>
     <?php endif; ?>
 </div>

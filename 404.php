@@ -81,7 +81,6 @@
     color: #6D6B6B;
 }
 	</style>
-}
 </head>
 <body>
 	<div class="nofind">

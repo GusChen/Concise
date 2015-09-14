@@ -3,7 +3,6 @@
 <html lang="zh-cmn-Hans">
 <head>
     <meta charset="UTF-8">
-
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -26,7 +25,9 @@
 </head>
 <body>
 	<header>
-		<div class="top"><img src="<?php $this->options->themeUrl('1.png'); ?>" alt=""></div>
+		<div class="top">
+            <embed style="width: 140px;height: 140px;margin-top: 25px;" src="<?php $this->options->themeUrl('logo.svg'); ?>" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/">
+        </div>
 	</header>
 	<nav>
         <section>
